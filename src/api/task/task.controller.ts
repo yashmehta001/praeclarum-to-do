@@ -27,7 +27,7 @@ export class TaskController {
   }
 
   @Serialize(ResGetTask)
-  @Get()
+  @Get(':id')
   async getTask(@Param('id', ParseIntPipe) id: number) {
     return this.taskService.getTask(id);
   }

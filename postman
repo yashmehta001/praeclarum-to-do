@@ -102,12 +102,47 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/task",
+							"raw": "{{url}}/task?page=1&limit=2",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"task"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Task id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/task/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"task",
+								"10"
 							]
 						}
 					},
